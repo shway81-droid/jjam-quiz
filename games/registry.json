@@ -1,8 +1,5 @@
 [
-  "rps-react",
-  "beep-count",
   "running-sum",
-  "shadow-match",
   "odd-one-out",
   "pattern-next",
   "quick-math",
@@ -25,7 +22,6 @@
   "season-match",
   "trash-sort",
   "jamo-merge",
-  "half-match",
   "emoji-clue",
   "chain-calc",
   "fold-guess",

@@ -943,6 +943,11 @@ const _GAME_CATEGORY_MAP = {
   'province-quiz': 'korea',
   'sentence-type-quiz': 'korean',
   'eco-save-quiz': 'life',
+  'money-count': 'math',
+  'measure-unit': 'math',
+  'magnet-quiz': 'science',
+  'world-landmark': 'world',
+  'local-specialty': 'korea',
 };
 /* @end:category-map */
 

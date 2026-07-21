@@ -114,8 +114,9 @@ for (const t of targets) {
   const catCount = {};
   for (const g of games) catCount[g.category] = (catCount[g.category] || 0) + 1;
   const distLine =
-    `⚡반응속도 ${catCount.speed || 0} · 🧠두뇌 ${catCount.brain || 0} · 📐수학 ${catCount.math || 0}` +
-    ` · 📚지식 ${catCount.knowledge || 0} · 🤝협력 ${catCount.coop || 0} · 🧩퍼즐 ${catCount.puzzle || 0}`;
+    `🔤국어·낱말 ${catCount.korean || 0} · 📐수학·도형 ${catCount.math || 0} · 🔬과학·자연 ${catCount.science || 0}` +
+    ` · 🇰🇷우리나라 ${catCount.korea || 0} · 🌍세계·사회 ${catCount.world || 0} · 🏠생활·상식 ${catCount.life || 0}` +
+    ` · ⚡순발력·감각 ${catCount.speed || 0}`;
 
   const countTargets = [
     { file: 'index.html', name: '게임 수 표기', subs: [
@@ -127,7 +128,7 @@ for (const t of targets) {
     { file: 'README.md', name: '게임 수·분포 표기', subs: [
       [/초등 문답형 미니게임 \d+종/g, `초등 문답형 미니게임 ${total}종`],
       [/## 게임 \d+종/g, `## 게임 ${total}종`],
-      [/⚡반응속도 \d+ · 🧠두뇌 \d+ · 📐수학 \d+ · 📚지식 \d+ · 🤝협력 \d+ · 🧩퍼즐 \d+/g, distLine],
+      [/🔤국어·낱말 \d+ · 📐수학·도형 \d+ · 🔬과학·자연 \d+ · 🇰🇷우리나라 \d+ · 🌍세계·사회 \d+ · 🏠생활·상식 \d+ · ⚡순발력·감각 \d+/g, distLine],
     ]},
   ];
 

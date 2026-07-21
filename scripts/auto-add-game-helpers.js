@@ -51,7 +51,7 @@ if (cmd === 'list-existing-folders') {
 if (cmd === 'stats') {
   // 카테고리는 game.json 단일 소스에서 집계
   const reg = readRegistry();
-  const counts = { korean: 0, math: 0, science: 0, korea: 0, world: 0, life: 0, speed: 0 };
+  const counts = { korean: 0, math: 0, science: 0, korea: 0, world: 0, life: 0 };
   reg.forEach(folder => {
     try {
       const j = JSON.parse(fs.readFileSync(path.join(ROOT, 'games', folder, 'game.json'), 'utf-8'));

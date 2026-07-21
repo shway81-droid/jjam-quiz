@@ -115,12 +115,12 @@ for (const t of targets) {
   for (const g of games) catCount[g.category] = (catCount[g.category] || 0) + 1;
   const distLine =
     `🔤국어·낱말 ${catCount.korean || 0} · 📐수학·도형 ${catCount.math || 0} · 🔬과학·자연 ${catCount.science || 0}` +
-    ` · 🇰🇷우리나라 ${catCount.korea || 0} · 🌍세계·사회 ${catCount.world || 0} · 🏠생활·상식 ${catCount.life || 0}` +
-    ` · ⚡순발력·감각 ${catCount.speed || 0}`;
+    ` · 🇰🇷우리나라 ${catCount.korea || 0} · 🌍세계·사회 ${catCount.world || 0} · 🏠생활·상식 ${catCount.life || 0}`;
 
   const countTargets = [
     { file: 'index.html', name: '게임 수 표기', subs: [
       [/미니게임 \d+개/g, `미니게임 ${total}개`],
+      [/미니게임 <b>\d+개<\/b>/g, `미니게임 <b>${total}개</b>`],  // CTA 스트립 (볼드 마크업 포함)
     ]},
     { file: 'manifest.json', name: '게임 수 표기', subs: [
       [/미니게임 \d+개/g, `미니게임 ${total}개`],
@@ -128,7 +128,7 @@ for (const t of targets) {
     { file: 'README.md', name: '게임 수·분포 표기', subs: [
       [/초등 문답형 미니게임 \d+종/g, `초등 문답형 미니게임 ${total}종`],
       [/## 게임 \d+종/g, `## 게임 ${total}종`],
-      [/🔤국어·낱말 \d+ · 📐수학·도형 \d+ · 🔬과학·자연 \d+ · 🇰🇷우리나라 \d+ · 🌍세계·사회 \d+ · 🏠생활·상식 \d+ · ⚡순발력·감각 \d+/g, distLine],
+      [/🔤국어·낱말 \d+ · 📐수학·도형 \d+ · 🔬과학·자연 \d+ · 🇰🇷우리나라 \d+ · 🌍세계·사회 \d+ · 🏠생활·상식 \d+( · ⚡순발력·감각 \d+)?/g, distLine],
     ]},
   ];
 

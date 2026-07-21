@@ -110,7 +110,7 @@ check('5. registry.json 등록', () => {
 check('6. game.json category 유효', () => {
   const p = path.join(gameDir, 'game.json');
   const json = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  const cats = ['korean', 'math', 'science', 'korea', 'world', 'life', 'speed'];
+  const cats = ['korean', 'math', 'science', 'korea', 'world', 'life'];
   return cats.includes(json.category) || `category "${json.category}" — ${cats.join('|')} 중 하나여야 함`;
 });
 
@@ -226,7 +226,7 @@ check('8. 카테고리 일관성 (game.json ↔ engine.js)', () => {
   const json = JSON.parse(fs.readFileSync(path.join(gameDir, 'game.json'), 'utf-8'));
   const engine = fs.readFileSync(path.join(ROOT, 'shared', 'engine.js'), 'utf-8');
 
-  const engineRe = new RegExp(`['"]${folder}['"]\\s*:\\s*['"](korean|math|science|korea|world|life|speed)['"]`);
+  const engineRe = new RegExp(`['"]${folder}['"]\\s*:\\s*['"](korean|math|science|korea|world|life)['"]`);
   const engineMatch = engine.match(engineRe);
 
   if (!engineMatch) return `engine.js _GAME_CATEGORY_MAP에 "${folder}" 없음 (npm run gen 필요)`;

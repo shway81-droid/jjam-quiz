@@ -847,10 +847,7 @@ function playCheer() {
 /* 게임 폴더명 → 카테고리 매핑 (BGM 분위기 결정용). _detectGameCategory가 사용. */
 /* @generated:category-map — scripts/gen-metadata.js가 game.json에서 생성. 직접 수정 금지 (npm run gen) */
 const _GAME_CATEGORY_MAP = {
-  'rps-react': 'speed',
-  'beep-count': 'speed',
   'running-sum': 'math',
-  'shadow-match': 'speed',
   'odd-one-out': 'korean',
   'pattern-next': 'math',
   'quick-math': 'math',
@@ -873,7 +870,6 @@ const _GAME_CATEGORY_MAP = {
   'season-match': 'science',
   'trash-sort': 'life',
   'jamo-merge': 'korean',
-  'half-match': 'speed',
   'emoji-clue': 'korean',
   'chain-calc': 'math',
   'fold-guess': 'math',

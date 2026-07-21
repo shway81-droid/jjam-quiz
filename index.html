@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="description" content="교실 전자칠판에서 바로 시작하는 초등 문답형 미니게임 100개. 룰렛 버튼 하나로 퀴즈를 골라줍니다. 설치·로그인 없음, 오프라인 동작.">
+  <meta name="description" content="교실 전자칠판에서 바로 시작하는 초등 문답형 미니게임 96개. 룰렛 버튼 하나로 퀴즈를 골라줍니다. 설치·로그인 없음, 오프라인 동작.">
   <meta name="keywords" content="짬짬이 퀴즈, 초등학교, 퀴즈게임, 전자칠판 게임, 자투리 시간, 문답형, 무료 게임">
   <meta name="author" content="짬짬이 퀴즈">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="짬짬이 퀴즈 — 자투리 시간 문답형 미니게임">
-  <meta property="og:description" content="룰렛 버튼 하나면 퀴즈가 정해집니다. 전자칠판 최적화 초등 문답형 미니게임 100개.">
+  <meta property="og:description" content="룰렛 버튼 하나면 퀴즈가 정해집니다. 전자칠판 최적화 초등 문답형 미니게임 96개.">
   <meta property="og:url" content="https://shway81-droid.github.io/jjam-quiz/">
   <meta property="og:image" content="https://shway81-droid.github.io/jjam-quiz/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="짬짬이 퀴즈 — 자투리 시간 문답형 미니게임">
-  <meta name="twitter:description" content="룰렛 버튼 하나면 퀴즈가 정해집니다. 전자칠판 최적화 초등 문답형 미니게임 100개.">
+  <meta name="twitter:description" content="룰렛 버튼 하나면 퀴즈가 정해집니다. 전자칠판 최적화 초등 문답형 미니게임 96개.">
   <meta name="twitter:image" content="https://shway81-droid.github.io/jjam-quiz/og-image.png">
   <title>짬짬이 퀴즈 — 자투리 시간 문답형 미니게임</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -462,7 +462,7 @@
           <div class="logo-mark"><svg viewBox="0 0 100 100" width="46" height="46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#FFB703"/><circle cx="50" cy="52" r="30" fill="#152447"/><path d="M43 38 L43 66 L67 52 Z" fill="#FFB703"/><circle cx="79" cy="21" r="7" fill="#FFFFFF"/><circle cx="79" cy="21" r="3" fill="#152447"/></svg></div>
           <div>
             <h1>짬짬이 퀴즈</h1>
-            <div class="sub">전자칠판으로 즐기는 자투리 시간 문답형 미니게임</div>
+            <div class="sub">재밌게 즐기는 자투리 시간 퀴즈</div>
           </div>
         </div>
         <div class="header-right">
@@ -481,7 +481,6 @@
         <button class="cat-btn" data-cat="korea">🇰🇷 우리나라</button>
         <button class="cat-btn" data-cat="world">🌍 세계·사회</button>
         <button class="cat-btn" data-cat="life">🏠 생활·상식</button>
-        <button class="cat-btn" data-cat="speed">⚡ 순발력·감각</button>
         <div class="cat-search" id="catSearch">
           <span class="cat-search-icon" aria-hidden="true">🔍</span>
           <input class="cat-search-input" id="searchInput" type="search" placeholder="게임 찾기"
@@ -493,7 +492,7 @@
 
     <!-- 안내 문구 + 룰렛/학생 뽑기 CTA 스트립 -->
     <div class="cta-strip">
-      <p class="cta-copy"><b>수업 자투리 5분,</b> 준비 없이 바로 시작하는 문답형 미니게임 <b>100개</b> · 설치 없음 · 로그인 없음</p>
+      <p class="cta-copy"><b>수업 자투리 5분,</b> 준비 없이 바로 시작하는 문답형 미니게임 <b>96개</b> · 설치 없음 · 로그인 없음</p>
       <div class="roulette-cta-row">
         <button class="roulette-cta" id="rouletteCta">🎲 룰렛으로 게임 고르기!</button>
         <button class="pick-cta" id="studentCta">👥 학생 뽑기</button>
@@ -587,10 +586,7 @@
     // ═══ 게임 메타데이터 — category·players·폴백 모두 game.json 단일 소스에서 파생 ═══
     /* @generated:fallback — scripts/gen-metadata.js가 game.json에서 생성. registry fetch 실패 시 오프라인 폴백. 직접 수정 금지 (npm run gen) */
     var FALLBACK_GAMES = [
-      {"folder":"rps-react","name":"가위바위보 반사","description":"상대 손을 보고 이기는 손을 가장 먼저 골라요! 순발력 게임","icon":"✊","color":"#7B1FA2","playTime":"1~2분","category":"speed","players":"2-4명"},
-      {"folder":"beep-count","name":"소리 세기","description":"삑 소리가 몇 번 울렸는지 세서 맞혀요!","icon":"👂","color":"#F4511E","playTime":"1분","category":"speed","players":"2-4명"},
       {"folder":"running-sum","name":"달리는 덧셈","description":"기차가 싣고 가는 수를 계속 더해요! 지금까지 합은?","icon":"🚂","color":"#6D4C41","playTime":"1분","category":"math","players":"2-4명"},
-      {"folder":"shadow-match","name":"그림자 맞히기","description":"그림자를 보고 원래 그림을 찾으세요!","icon":"🌑","color":"#546E7A","playTime":"1분","category":"speed","players":"2-4명"},
       {"folder":"odd-one-out","name":"다른 낱말 찾기","description":"끼리끼리 모인 낱말 중 어울리지 않는 하나를 찾아요!","icon":"🔍","color":"#7E57C2","playTime":"1분","category":"korean","players":"2-4명"},
       {"folder":"pattern-next","name":"다음 무늬","description":"반복되는 무늬를 보고 다음에 올 무늬를 찾으세요!","icon":"🔷","color":"#7E57C2","playTime":"1분","category":"math","players":"2-4명"},
       {"folder":"quick-math","name":"빠른 계산","description":"정답을 가장 먼저 터치하세요!","icon":"🧮","color":"#26A69A","playTime":"1~2분","category":"math","players":"2-4명"},
@@ -613,7 +609,6 @@
       {"folder":"season-match","name":"계절 찾기","description":"그림을 보고 어울리는 계절을 골라요!","icon":"🍂","color":"#7CB342","playTime":"1분","category":"science","players":"2-4명"},
       {"folder":"trash-sort","name":"분리수거","description":"쓰레기를 알맞은 분리수거함에 넣어요!","icon":"♻️","color":"#2E7D32","playTime":"1분","category":"life","players":"2-4명"},
       {"folder":"jamo-merge","name":"자음+모음 합치기","description":"P1은 자음, P2는 모음을 골라 목표 글자를 만들어요! 한글 협력 게임","icon":"🔤","color":"#43A047","playTime":"1~2분","category":"korean","players":"2명"},
-      {"folder":"half-match","name":"반쪽 맞추기","description":"P1이 본 그림 조합을 말로 설명해 P2가 찾아요!","icon":"🧩","color":"#43A047","playTime":"1~2분","category":"speed","players":"2명"},
       {"folder":"emoji-clue","name":"이모지 힌트","description":"P1이 이모지 3개로 힌트! P2가 단어를 맞혀요!","icon":"💡","color":"#F9A825","playTime":"1~2분","category":"korean","players":"2명"},
       {"folder":"chain-calc","name":"이어 계산","description":"P1의 답이 P2 문제로 이어져요! 둘이 함께 계산 완성!","icon":"🔗","color":"#00897B","playTime":"1~2분","category":"math","players":"2명"},
       {"folder":"fold-guess","name":"종이접기","description":"접은 종이를 펼치면 어떤 모양일까요?","icon":"📄","color":"#7C4DFF","playTime":"1분","category":"math","players":"2-4명"},
